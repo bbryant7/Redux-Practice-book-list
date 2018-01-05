@@ -13,6 +13,9 @@ class BookDetail extends Component{
       <div>
         <h3>Details: </h3>
         <div>{this.props.book.title}</div>
+        <div>{this.props.book.author}</div>
+        <div>{this.props.book.pages}</div>
+        <img src="http://www.royalcanin.ca/~/media/Royal-Canin-Canada/Product-Categories/cat-adult-landing-hero.ashx" alt="image of cat"/>
       </div>
     )
   }

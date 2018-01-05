@@ -4,6 +4,7 @@ export function selectBook(book) {
     payload: book
   };
 }
+
 // NOTES:
 // type: describes purpose of the Action, required
 // payload: describes what the action is, common.

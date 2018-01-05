@@ -7,6 +7,8 @@ import {bindActionCreators} from 'redux';
 // "books" references the books key from the return value of the mapStateToProps function. the value of the books key is the array from the booksListReducer
 class BookList extends Component{
 renderList(){
+  console.log("books",this.props.books)
+  console.log("selectBook",this.props.selectBook)
   return this.props.books.map((book)=>{
     return (
       <li
@@ -15,6 +17,7 @@ renderList(){
       key={book.title} >
       {book.title}
       </li>
+
     )
   })
 }
@@ -38,7 +41,7 @@ function mapDispatchToProps(dispatch) {
 
   return bindActionCreators({ selectBook : selectBook }, dispatch)
 }
-// Whatever is returned from mapDispatchToPropts (in this case, selectBook) is set to the value of props in the context of this BookList container
+// Whatever is returned from mapDispatchToProps (in this case, selectBook) is set to the value of props in the context of this BookList container
 
 // bindAcitonCreators function binds the action creator to this container by sending what is returned through the dispatch function, which acts as a funnel for the reducers. Is imported from redux.
 

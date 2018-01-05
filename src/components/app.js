@@ -5,7 +5,9 @@ export default class App extends Component {
   render() {
     return (
       <div>
-      React simple starter
+      <br />
+      <br />
+      <h1>React simple starter</h1>
       <BookList/>
       <BookDetail/>
       </div>
